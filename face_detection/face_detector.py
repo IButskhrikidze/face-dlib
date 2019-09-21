@@ -71,5 +71,6 @@ def compare_faces(face1_code, face2_code, dist = 0.6):
     :param dist: maximal dist between same faces
     :return: True if face is same False otherwise
     """
-    return np.linalg.norm(face1_code-face2_code, axis=0) <= dist
+    length = np.linalg.norm(face1_code-face2_code, axis=0)
+    return {'dist' : length, 'verdict' : 1 if length <= dist else 0}
 

@@ -1,8 +1,8 @@
 from face_detection.face_detector import *
 from config.processing import *
 
-image1 = read_image('./image/img1.jpg')
-image2 = read_image('./image/img2.jpg')
+image1 = read_image('./image/1.jpg')
+image2 = read_image('./image/2.jpg')
 
 faces1 = face_detection(image1)
 faces2 = face_detection(image2)
