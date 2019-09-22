@@ -13,7 +13,6 @@ class Compare_faces(Resource):
     def get(self):
         data = request.files.to_dict()
         params = request.values
-        print(params)
         if params['token'] != "ibutskhrikidze":
             return jsonify({"message" : "You do't have valid token"})
         
@@ -42,7 +41,6 @@ class Get_faces(Resource):
     def get(self):
         data = request.files.to_dict()
         params = request.values
-        print(params)
         if params['token'] != "ibutskhrikidze":
             return jsonify({"message" : "You do't have valid token"})
         
